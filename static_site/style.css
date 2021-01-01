@@ -1,0 +1,22 @@
+*{
+    font-family: cursive;
+}
+img{
+    width: 500px!important;
+    height: 500px!important;
+    border: solid;
+    border-radius: 50%;
+    background: white;
+    opacity: .5;
+    filter: blur(3px);
+}
+.input_text{
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 5px 10px #333;
+    border-radius: 25px;
+    background: red;
+    color: white;
+}

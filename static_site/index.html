@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background: orange;
+            padding: 100px;
+            color: white;
+        }
+    </style>
+</head>
+<body style="color: red">
+    
+    <header>
+        <h1>
+            Lorem ipsum dolor sit amet.
+        </h1>
+        <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates temporibus non dignissimos quaerat ad, porro commodi illum nihil voluptatibus illo eius, impedit quis rerum quisquam neque repudiandae perspiciatis alias eum. Ea, veniam omnis? Animi expedita accusamus illum sunt rerum cum ab atque praesentium, suscipit aliquam veritatis aperiam dolorem quibusdam quam dolor amet. Ea quis facere amet soluta iste est quia eligendi ipsum nam dolore.
+        </h2>
+        <h3>
+            Lorem, ipsum.
+        </h3>
+        <h4>
+            Lorem, ipsum dolor.
+        </h4>
+        <h5>
+            Lorem.
+    
+        </h5>
+        <h6>
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+        </h6>
+    </header>
+    <menu>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nikhil</td>
+                    <td>Bangladesh</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>USA</td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li> This is list </li>
+            <li>Ab, quaerat libero.</li>
+            <li>Dolorem, impedit ut?</li>
+            <li>Fugiat, at amet?</li>
+            <li>Et, molestiae architecto!</li>
+            <li>Lorem, ipsum.</li>
+            <li>Veniam, voluptas?</li>
+        </ul>
+    </menu>
+
+    <footer>
+        <p>
+            This is footer
+        </p>
+        <p style="color: red" title="I am title">
+            This is a paragraph
+        </p>
+        <img style="width: 200px; height: 200px" src="./media/Screenshot_8.png">
+
+        <h1>
+            Timer: <span> </span>
+        </h1>
+        <input class="input_text" oninput="textInput(this)" type="text">
+        <p class="text_output">
+
+        </p>
+    </footer>
+    <script>
+        function Timer(){
+            let myTimer = document.querySelector('h1 span')
+            myTimer.innerHTML = new Date().toLocaleTimeString();
+        }
+        setInterval(()=> Timer())
+        function textInput(val){
+            document.querySelector('.text_output').innerHTML = val.value;
+        }
+    </script>
+</body>
+</html>

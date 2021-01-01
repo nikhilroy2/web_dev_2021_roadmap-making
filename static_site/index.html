@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <style>
-        body{
+        body {
             background: orange;
             padding: 100px;
             color: white;
         }
     </style>
 </head>
+
 <body style="color: red">
-    
+
     <header>
         <h1>
             Lorem ipsum dolor sit amet.
         </h1>
         <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates temporibus non dignissimos quaerat ad, porro commodi illum nihil voluptatibus illo eius, impedit quis rerum quisquam neque repudiandae perspiciatis alias eum. Ea, veniam omnis? Animi expedita accusamus illum sunt rerum cum ab atque praesentium, suscipit aliquam veritatis aperiam dolorem quibusdam quam dolor amet. Ea quis facere amet soluta iste est quia eligendi ipsum nam dolore.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates temporibus non dignissimos
+            quaerat ad, porro commodi illum nihil voluptatibus illo eius, impedit quis rerum quisquam neque repudiandae
+            perspiciatis alias eum. Ea, veniam omnis? Animi expedita accusamus illum sunt rerum cum ab atque
+            praesentium, suscipit aliquam veritatis aperiam dolorem quibusdam quam dolor amet. Ea quis facere amet
+            soluta iste est quia eligendi ipsum nam dolore.
         </h2>
         <h3>
             Lorem, ipsum.
@@ -30,7 +37,7 @@
         </h4>
         <h5>
             Lorem.
-    
+
         </h5>
         <h6>
             Lorem ipsum dolor sit amet consectetur adipisicing.
@@ -67,6 +74,22 @@
         </ul>
     </menu>
 
+    <div class="splide" id="splide">
+        <div class="splide__slider"> <!-- relative -->
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="https://cdn.pixabay.com/photo/2019/12/17/14/07/amaryllis-4701720__340.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="https://cdn.pixabay.com/photo/2019/12/06/19/06/heart-4678021__340.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="https://cdn.pixabay.com/photo/2019/12/06/19/06/heart-4678021__340.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div>
+            <!-- extra contents -->
+        </div>
+    </div>
+
     <footer>
         <p>
             This is footer
@@ -85,15 +108,28 @@
         </p>
     </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
     <script>
-        function Timer(){
+        function Timer() {
             let myTimer = $('h1 span')
             myTimer.html(new Date().toLocaleTimeString())
         }
-        setInterval(()=> Timer())
-        function textInput(val){
+        setInterval(() => Timer())
+        function textInput(val) {
             document.querySelector('.text_output').innerHTML = val.value;
         }
+
+        new Splide('#splide', {
+            type: 'loop',
+            padding: {
+                right: '5rem',
+                left: '5rem',
+            },
+        }).mount();
+
     </script>
+
 </body>
+
 </html>

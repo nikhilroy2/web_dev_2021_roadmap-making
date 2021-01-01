@@ -8,16 +8,9 @@ $wt: blue;
     align-items: center;
 }
 body{
-    @include j-center;
-    min-height: 100vh;
     img{
         width: 500px!important;
-        height: 500px!important;
-        border: solid;
-        border-radius: 50%;
-        background: $wt;
-        opacity: .5;
-        filter: blur(3px);
+        
     }
     .input_text{
         width: 100%;

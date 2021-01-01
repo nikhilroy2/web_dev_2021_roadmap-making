@@ -6,3 +6,9 @@
 https://pugjs.org/api/getting-started.html
 
 ..... scss
+1. w3schools
+2. https://sass-lang.com/documentation/style-rules
+
+static site demo very basic
+
+https://youthful-yonath-6184df.netlify.app/

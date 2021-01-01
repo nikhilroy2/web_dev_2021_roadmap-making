@@ -1,0 +1,34 @@
+*{
+    font-family: cursive;
+}
+$wt: blue;
+@mixin j-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    @include j-center;
+    min-height: 100vh;
+    img{
+        width: 500px!important;
+        height: 500px!important;
+        border: solid;
+        border-radius: 50%;
+        background: $wt;
+        opacity: .5;
+        filter: blur(3px);
+    }
+    .input_text{
+        width: 100%;
+        padding: 15px;
+        border: 0;
+        outline: 0;
+        box-shadow: 0 5px 10px #333;
+        border-radius: 25px;
+        background: red;
+        color: $wt;
+    }
+    
+}
+
